@@ -39,4 +39,27 @@ $(function() {
 		$("#outputSubtract").text(result);
 	});
 	//end subtract
+	//start multiply
+	$("form#multiply").submit(function(event) {
+		event.preventDefault();
+
+		var number1 = parseInt($("#multiply1").val());
+		var number2 = parseInt($("#multiply2").val());
+		var result = multiply(number1, number2);
+
+		$("#outputMultiply").text(result);
+	});
+	//end subtract
+	//start multiply
+	$("form#divide").submit(function(event) {
+		event.preventDefault();
+		console.log("this is working")
+
+		var number1 = parseInt($("#divide1").val());
+		var number2 = parseInt($("#divide2").val());
+		var result = divide(number1, number2);
+
+		$("#outputDivide").text(result);
+	});
+	//end subtract
 });
